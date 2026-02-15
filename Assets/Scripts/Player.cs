@@ -2,14 +2,17 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Scripting.APIUpdating;
+using Unity.VisualScripting;
 public class Player : MonoBehaviour
 {
     public float speed = 0.5f;
     private Rigidbody2D rb;
     private Vector2 input;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+      
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -17,7 +20,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
- 
+      
     }
     void FixedUpdate()
     {
@@ -30,4 +33,5 @@ public class Player : MonoBehaviour
 
         input.Normalize();
     }
+  
 }

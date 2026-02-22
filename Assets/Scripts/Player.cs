@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
     }
     private void Dash()
     {
-        if (Input.GetKeyDown("space") && input != Vector2.zero && isDashing == false && dashCount < 3)
+        if (Input.GetKeyDown("space") && input != Vector2.zero && isDashing == false )
         {
             isDashing = true;
             currentSpeed = dashSpeed;

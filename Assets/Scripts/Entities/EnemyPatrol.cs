@@ -25,6 +25,9 @@ public class EnemyPatrol : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _rb.gravityScale = 0;
+       
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        
     }
 
     void FixedUpdate()
